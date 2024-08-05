@@ -1,0 +1,79 @@
+#movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1em;
+}
+
+.movie-card {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 1em;
+  width: 280px;
+  position: relative;
+  overflow: visible;
+  transition: max-height 0.5s ease, box-shadow 0.5s ease;
+  max-height: 700px; /* This is the start height of the blocks */
+}
+
+.movie-card img {
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+}
+
+.movie-details {
+  padding: 1em;
+}
+
+.extra-details {
+  max-height: 0;
+  opacity: 0;
+  /* transition: max-height 1.5s ease, opacity 1.5s ease; Smooth transition*/
+  transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+  padding: 1em;
+}
+
+.movie-card.expanded {
+  /* width: 200px; */
+  max-height: 1000px;
+  overflow: auto;
+  z-index: 10;
+  transition: all 0.5s ease;
+}
+
+.movie-overview {
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Here I declare how many lines to show for overview content */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 4.5em; /* The height of these 3 lines */
+}
+
+.movie-card.expanded .movie-overview {
+  display: block; /* Show the full text when expanded */
+  max-height: none; /* Remove the height restriction */
+}
+.movie-card.expanded .extra-details {
+  max-height: 500px; /* The maximum height for extra the details component */
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.5s ease;
+}
+
+.trailer iframe {
+  width: 100%;
+  height: 200px;
+}
+
+.similar-movie-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.similar-movie {
+  margin: 0.5em;
+  text-align: center;
+  width: 150px;
+}

@@ -1,0 +1,29 @@
+.top-bar {
+  background-color: #033a64;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 10px 30px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+  margin-right: 15px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+nav ul li a {
+  color: #fff;
+  font-size: 1rem;
+}
