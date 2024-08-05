@@ -6,6 +6,6 @@ While developing my web application, I've been facing issues with the CORS (Cros
 
 ### Instructions for Local Development
 
-1. First, install the HTTP-server package globally:npm install -g http-server
+1. First, install the HTTP-server package globally: <b>npm install -g http-server</b>
 2. Navigate to the `src` folder of the project and run:$ http-server -p 8000
 This will start the local server on port 8000.
