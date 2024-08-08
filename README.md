@@ -7,5 +7,8 @@ While developing my web application, I've been facing issues with the CORS (Cros
 ### Instructions for Local Development
 
 1. First, install the HTTP-server package globally: <b>npm install -g http-server</b>
-2. Navigate to the `src` folder of the project and run: <b> http-server -p 8000 </b> <br>
+2. Navigate to the `src` folder of the project and run with git bash or command : <b> http-server -p 8000 </b> <br>
 This will start the local server on port 8000, but you can use any other port fits you.
+
+Then if you type https://localhost:8000 in the browser, it will open the index page of the application.
+
